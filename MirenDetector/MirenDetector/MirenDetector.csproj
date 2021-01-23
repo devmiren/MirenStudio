@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
+    <Version>0.1.2</Version>
+    <Authors>Miren</Authors>
+    <StartupObject>MirenDetector.App</StartupObject>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MirenAPI\**" />
+    <EmbeddedResource Remove="MirenAPI\**" />
+    <None Remove="MirenAPI\**" />
+    <Page Remove="MirenAPI\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Emotion.onnx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML.OnnxRuntime.Gpu" Version="1.6.0" />
+    <PackageReference Include="OpenCvSharp4" Version="4.5.1.20201226" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.5.1.20201226" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\emotionferplus8.onnx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\IrisLandmark.onnx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\pfld.onnx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\RFB640.onnx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>

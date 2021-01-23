@@ -1,0 +1,25 @@
+﻿<Window x:Class="MirenDetector.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MirenDetector"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="640" Width="960">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <Canvas x:Name="imageCanvas" Width="640" Height="480">
+                <Image x:Name="previewImage" Stretch="Fill" Width="640" Height="480" />
+                <Canvas x:Name="resultCanvas" Width="640" Height="480">
+                    <Rectangle x:Name="faceRect" StrokeThickness="4" Stroke="#FFEA18A7" Width="100" Height="100" Canvas.Left="100" Canvas.Top="100"/>
+                </Canvas>
+            </Canvas>
+            <StackPanel Orientation="Vertical">
+                <CheckBox x:Name="showCameraImage" Content="Camera Image" IsChecked="False"/>
+                <CheckBox x:Name="showDetectionResult" Content="Detection Result" IsChecked="True"/>
+                <ComboBox x:Name="webcamList" SelectionChanged="webcamListSelection" Width="120"/>
+                <!-- <Button x:Name="addFacePointsButton" Click="AddFacePoints" Height="20">Click!</Button> -->
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
