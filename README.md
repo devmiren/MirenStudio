@@ -18,3 +18,5 @@ MirenStudio is open source Vtuber software.
 - Facial landmark detection: PFLD, A Practical Facial Landmark Detector 
 - Face pose: SolvePnP in OpenCVSharp
 - Gaze estimation: [Laser-Eye](https://github.com/1996scarlet/Laser-Eye), [GazeML](https://github.com/swook/GazeML) (with some modification)
+
+We are looking forward to more stable and high accuracy machine learning components. If there is a more suitable ML network, please contribute!
