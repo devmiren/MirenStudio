@@ -1,4 +1,8 @@
 # MirenStudio
+
+![VRM_1](https://user-images.githubusercontent.com/75804798/122736746-4e576600-d2bb-11eb-864d-0dbd09298dd4.gif)
+![Live2D_1](https://user-images.githubusercontent.com/75804798/122736753-4f889300-d2bb-11eb-977b-995969b0ea5e.gif)
+
 MirenStudio is open source Vtuber software.
 
 - The software works on Windows 10 with some installation.
@@ -20,3 +24,9 @@ MirenStudio is open source Vtuber software.
 - Gaze estimation: [Laser-Eye](https://github.com/1996scarlet/Laser-Eye), [GazeML](https://github.com/swook/GazeML) (with some modification)
 
 We are looking forward to more stable and high accuracy machine learning components. If there is a more suitable ML network, please contribute!
+
+### Demos
+
+https://user-images.githubusercontent.com/75804798/122732816-996f7a00-d2b7-11eb-949a-9bf24bab09b0.mp4
+ 
+https://user-images.githubusercontent.com/75804798/122732835-9bd1d400-d2b7-11eb-9ea1-486788387604.mp4
